@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "uniqueDnsName": {
-        "value": "<>.mysoluto.com"
+        "value": "<>"
       },
       "isAlivePath": {
         "value": "/"
       },
       "eastDnsName": {
-        "value": "<>-east.mysoluto.com"
+        "value": "<>"
       },
       "westDnsName": {
-        "value": "<>-west.mysoluto.com"
+        "value": "<>"
       }
     }
   }

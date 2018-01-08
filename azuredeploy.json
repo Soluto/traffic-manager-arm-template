@@ -7,6 +7,24 @@
         "metadata": {
           "description": "Relative DNS name for the traffic manager profile, resulting FQDN will be <uniqueDnsName>.trafficmanager.net, must be globally unique."
         }
+      },
+      "isAlivePath": {
+        "type": "string",
+        "metadata": {
+          "description": "Relative path for health checks performed by traffic manager"
+        }
+      },
+      "eastDnsName": {
+        "type": "string",
+        "metadata": {
+          "description": "Full DNS name for east end point"
+        }
+      },
+      "westDnsName": {
+        "type": "string",
+        "metadata": {
+          "description": "Full DNS name for west end point"
+        }
       }
     },
     "variables": {
