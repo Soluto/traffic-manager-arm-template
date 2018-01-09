@@ -50,21 +50,21 @@
           },
           "endpoints": [
             {
-              "name": "kubernetes-east",
+              "name": "eastus",
               "type": "Microsoft.Network/TrafficManagerProfiles/ExternalEndpoints",
               "properties": {
                 "target": "[parameters('eastDnsName')]",
                 "endpointStatus": "Enabled",
-                "weight": "5"
+                "weight": "95"
               }
             },
             {
-              "name": "kubernetes-west",
+              "name": "westus",
               "type": "Microsoft.Network/TrafficManagerProfiles/ExternalEndpoints",
               "properties": {
                 "target": "[parameters('westDnsName')]",
                 "endpointStatus": "Enabled",
-                "weight": "95"
+                "weight": "5"
               }
             }
           ]
