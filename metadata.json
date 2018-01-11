@@ -1,7 +1,7 @@
 {
     "itemDisplayName": "Azure Traffic Manager with 2 external endpoints",
-    "description": "This template create traffic manager with 2 endpoint, east and west",
-    "summary": "This template create traffic manager with 2 endpoint, east and west: west 95% of traffic, east 5% of traffic",
+    "description": "This template create traffic manager with 2 endpoint, primary and secondary",
+    "summary": "This template create traffic manager with 2 endpoint, primary and secondary: secondary 95% of traffic, primary 5% of traffic",
     "githubUsername": "Omer Levi Hevroni",
     "dateUpdated": "2018-01-08"
   }

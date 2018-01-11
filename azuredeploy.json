@@ -14,16 +14,16 @@
           "description": "Relative path for health checks performed by traffic manager"
         }
       },
-      "eastDnsName": {
+      "primaryDnsName": {
         "type": "string",
         "metadata": {
-          "description": "Full DNS name for east end point"
+          "description": "Full DNS name for primary end point"
         }
       },
-      "westDnsName": {
+      "secondaryDnsName": {
         "type": "string",
         "metadata": {
-          "description": "Full DNS name for west end point"
+          "description": "Full DNS name for secondary end point"
         }
       }
     },
@@ -50,19 +50,19 @@
           },
           "endpoints": [
             {
-              "name": "eastus",
+              "name": "primary",
               "type": "Microsoft.Network/TrafficManagerProfiles/ExternalEndpoints",
               "properties": {
-                "target": "[parameters('eastDnsName')]",
+                "target": "[parameters('primaryDnsName')]",
                 "endpointStatus": "Enabled",
                 "weight": "95"
               }
             },
             {
-              "name": "westus",
+              "name": "secondary",
               "type": "Microsoft.Network/TrafficManagerProfiles/ExternalEndpoints",
               "properties": {
-                "target": "[parameters('westDnsName')]",
+                "target": "[parameters('secondaryDnsName')]",
                 "endpointStatus": "Enabled",
                 "weight": "5"
               }

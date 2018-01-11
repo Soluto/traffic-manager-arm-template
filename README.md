@@ -5,7 +5,7 @@
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-This template create traffic manager with 2 endpoint, east and west: west 95% of traffic, east 5% of traffic.
+This template create traffic manager with 2 endpoint, primary and secondary: secondary 95% of traffic, primary 5% of traffic.
 
 Copied from [official sample](https://github.com/Azure/azure-quickstart-templates/tree/master/101-traffic-manager-external-endpoint), and modified to fit to our needs.
 
