@@ -8,10 +8,10 @@
       "isAlivePath": {
         "value": "/"
       },
-      "eastDnsName": {
+      "primaryDnsName": {
         "value": "<>"
       },
-      "westDnsName": {
+      "secondaryDnsName": {
         "value": "<>"
       }
     }
